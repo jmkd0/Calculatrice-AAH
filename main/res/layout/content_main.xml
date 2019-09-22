@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jean.africapp1.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:id="@+id/resultat"
+        android:background="#3E3053">
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:lines="1"
+            android:background="#B4C2C6"
+            android:inputType="none"
+            android:focusable="false"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:background="#B4C2C6">
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="38sp"
+                android:gravity="right"
+                android:textColor="#140A2F"
+                android:textStyle="bold|italic"
+                android:layout_marginBottom="5dp"
+                android:background="#B4C2C6"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/resultat"
+        android:orientation="horizontal"
+        android:background="#1B2137">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:textColor="#CFDBDF"
+            android:text="Merci d'utiliser cette application pour vos calculs"
+            android:lines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear1"
+        android:background="#322C4E">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:layout_gravity="bottom">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/table"
+                android:background="#322C4E">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="Asin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF00F6"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Acos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="#FF00F6"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Atan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF00F6"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF00F6"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="⇦"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#961818"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"
+                        tools:background="@android:drawable/checkbox_off_background" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="Sin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1930B9"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Cos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1930B9"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Tan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1930B9"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="Ln"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1930B9"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="AC"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D400F8"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <Button android:text="7"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="8"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="9"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="("
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text=")"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="4"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="5"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="6"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="*"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="/"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="1"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="2"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="3"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="+"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="-"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="0"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="."
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="π"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"
+                        android:textAllCaps="false" />
+                    <Button android:text="^"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="√"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#204EA3"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+                    <Button android:text="00"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small" />
+                    <Button android:text="²"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button android:text="³"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/btn_default_small"/>
+                    <Button
+                        android:text="!"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                    <Button android:text="="
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="#DA0B0B"
+                        android:layout_weight="1"
+                        android:background="@android:drawable/checkbox_off_background"/>
+                </TableRow>
+            </TableLayout>
+          </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

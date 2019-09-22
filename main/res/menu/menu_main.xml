@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jean.africapp1.MainActivity">
+
+        <item android:title="OFF "
+            android:id="@+id/off"
+            app:showAsAction="ifRoom"
+            android:icon="@android:drawable/ic_lock_power_off"/>
+        <item android:title="voici le menu"
+            android:icon="@android:drawable/star_on"
+            app:showAsAction="ifRoom"
+            android:id="@+id/act" />
+        <item android:title="Sortir"
+            android:id="@+id/exit"
+            app:showAsAction="never" />
+        <item android:title="A propos"
+            app:showAsAction="never"
+            android:id="@+id/description" />
+        <item android:title="Nous appeller "
+            android:id="@+id/contact"
+            app:showAsAction="never" />
+
+</menu>
+

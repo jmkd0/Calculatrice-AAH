@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_propos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jean.africapp1.Propos"
+    tools:showIn="@layout/activity_propos">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/actionModeSplitBackground">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF8155AD">
+
+            <TextView
+                android:text="       AFRIK APPS HOME est une association formée par des étudiants en mathématique, informatique et communications des universités du Togo suivantes: Université de Lomé, DEFITECH-II, ESGIS."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textColor="#FFF5F3F8" />
+
+            <TextView
+                android:text='     Pour répondre aux besoins quotidiens des utilisateurs, les jeunes de AFRIK APPS HOME  viennent de sortir cette application "Calculatrice AAH".'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:text="      L'application répondra à vos besoins de calculs mathématiques et permet un accès aux fonctions circulaires et leurs réciproques."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:text="     Coordonnée par monsieur Emanuel Koffi ingénieur en formation en Système et Réseaux et ses colaborateurs, cette application est développée par Jean-Marie Komlan Dantodji, licencié en mathématique à l'Université de Lomé."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9" />
+
+            <TextView
+                android:text="    Elle est accessible et gratuite à tout le monde ."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11" />
+
+            <TextView
+                android:text="    Nos remerciements à nos enseignants qui nous ont soutenus lors de l'élaboration de ce projet et à toute personne impliquée dans la réussite de ce projet."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textColor="#FFF5F3F8"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
